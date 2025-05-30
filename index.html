@@ -7,22 +7,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>To Do List</h1>
-  <div id="addTask">
-    <label for="task">Tarefa:</label>
-    <input id="task" type="text"/>
-    <button id="buttonAddTask">+ Adicionar tarefa</button>
-  </div>
-  <div>
-    <ul class="tasksContainer">
-      <!-- <li>
-        <label for="">
-          <input class="checkbox" type="checkbox"/>
-          <span>texto</span>
-          <button class="deleteButton">X</button>
-        </label>
-      </li> -->
-    </ul>
+  <div id="contentContainer">
+    <h1>To Do List</h1>
+    <div id="addTask" class="boxContent">
+      <div id="addTaskContainer">
+        <input id="task" type="text" placeholder="O que você quer fazer?"></input>
+        <button id="buttonAddTask">+ Adicionar tarefa</button>
+      </div>
+    </div>
+    <div class="boxContent">
+
+      <div class="todoContainer">
+        <h2>To Do</h2>
+        <ul class="tasksStyle todoContent">
+          <!-- <li>
+            <label for="">
+              <input class="checkbox" type="checkbox"/>
+              <span>texto</span>
+              <button class="deleteButton">X</button>
+            </label>
+          </li> -->
+        </ul>
+      </div>
+      
+      <div class="doingContainer">
+        <h2>Doing</h2>
+        <ul class="tasksStyle">
+          <!-- <li>
+            <label for="">
+              <input class="checkbox" type="checkbox"/>
+              <span>texto</span>
+              <button class="deleteButton">X</button>
+            </label>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="doneContainer">
+        <h2>Done</h2>
+        <ul class="tasksStyle">
+          <!-- <li>
+            <label for="">
+              <input class="checkbox" type="checkbox"/>
+              <span>texto</span>
+              <button class="deleteButton">X</button>
+            </label>
+          </li> -->
+        </ul>
+      </div>
+      
+    </div>
   </div>
   <script src="toDoList.js"></script>
 </body>

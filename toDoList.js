@@ -1,5 +1,5 @@
 function createTask() {
-    const taskList = document.querySelector('.tasksContainer');
+    const taskList = document.querySelector('.todoContent');
     const input = document.querySelector('input');
     
     if (input.value) {
@@ -17,7 +17,6 @@ function createTask() {
 
         checkbox.addEventListener('change', () => {
             taskText.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
-            
         });
 
         deleteButton.addEventListener('click', () => {

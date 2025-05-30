@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,50 +9,123 @@
 }
 
 body {
-  padding: 1rem;
-  background-color: #f0d4ff;
+  padding: 2vh;
+  background-color: #dddddd;
 }
 
 h1 {
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
+  align-self: center;
+  font-weight: 400;
 }
 
-#buttonAddTask {
-  border-radius: 20px;
-  background-color: #7800ba;
-  color: #ffffff;
-  border: none;
-  padding: 2px 10px;
-  cursor: pointer;
-}
-
-.tasksContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style-type: none;
-  margin-top: 1rem;
+h2 {
+  font-weight: 400;
+  margin-left: 5px;
 }
 
 span {
   margin-left: 0.5rem;
+  font-weight: 300;
 }
 
-.checkbox {
-  accent-color: #7800ba;
-  cursor: pointer;
+h1, h2, span {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 li {
   position: relative;
   display: flex;
   flex-direction: row;
+  flex: 1;
   /* border: solid 1px;
   border-color: #7800ba; */
   background-color: #d3aefa;
   border-radius: 10px;
   padding: 5px 10px;
-  width: 30vw;
+  min-width: 0; 
+}
+
+#contentContainer {
+  box-shadow: 0 0 10px #aaaaaa;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  margin: 3vh 10vh;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: #f0d4ff;
+}
+
+#addTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 20vh;
+}
+
+#addTaskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#task {
+  border: none;
+  border-bottom: solid 1px #333333;
+  outline: none;
+  padding: 4px;
+  width: 45vw;
+}
+
+#buttonAddTask {
+  align-self: center;
+  border-radius: 10px;
+  background-color: #7800ba;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px #aaaaaa;
+  width: 23vw;
+}
+
+.todoContainer,
+.doingContainer,
+.doneContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 5px #aaaaaa;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.boxContent {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #aaaaaa;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 50vh;
+}
+
+.tasksStyle{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+.checkbox {
+  accent-color: #7800ba;
+  cursor: pointer;
 }
 
 .deleteButton {
